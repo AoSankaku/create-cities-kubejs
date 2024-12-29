@@ -1,0 +1,10 @@
+//Modify Bedrock to be mineable
+BlockEvents.modification(event => {
+  event.modify(/mtr:.+/, block => {
+    block.setDestroySpeed(25)
+    block.explosionResistance = 1200
+  })
+  event.modify(/mtr:lift\_panel.+/, block => {
+    block.setDestroySpeed(1)
+  })
+})
