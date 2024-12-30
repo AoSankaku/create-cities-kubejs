@@ -21,4 +21,20 @@ ServerEvents.recipes((event) => {
     energy: 40,
     // experience: 0.15
   })
+
+  event.custom({
+    type: "thermal:compression_fuel",
+    ingredient: {
+      fluid: "createaddition:seed_oil"
+    },
+    energy: 16000,
+  })
+
+  event.custom({
+    type: "thermal:compression_fuel",
+    ingredient: {
+      fluid: "createaddition:bioethanol"
+    },
+    energy: 256000,
+  })
 })
