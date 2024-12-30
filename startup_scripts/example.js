@@ -17,8 +17,8 @@ ItemEvents.modification(event => {
   })
   event.modify('candlelight:lettuce_tomato', item => {
     item.foodProperties = food => {
-      food.hunger(7)
-      food.saturation(0.8)
+      food.hunger(3)
+      food.saturation(0.2)
     }
   })
 })
