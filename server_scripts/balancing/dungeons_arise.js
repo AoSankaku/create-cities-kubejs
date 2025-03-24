@@ -18,7 +18,6 @@ LootJS.modifiers((e) => {
         LootEntry.of("mekanism:ingot_tin").withWeight(2).limitCount([6, 12]),
         LootEntry.of("mekanism:ingot_osmium").withWeight(2).limitCount([3, 8]),
         LootEntry.of("mekanism:ingot_steel").withWeight(2).limitCount([2, 3]),
-        LootEntry.of("pointblank:gumnetal_ingot").withWeight(2).limitCount([2, 12]),
         LootEntry.of("create:zinc_ingot").withWeight(2).limitCount([10, 26]),
         LootEntry.of("create:brass_ingot").withWeight(2).limitCount([5, 15]),
         LootEntry.of("minecraft:wither_skeleton_skull").withWeight(1).limitCount(1)
