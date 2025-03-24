@@ -7,15 +7,12 @@ ServerEvents.recipes((event) => {
   bioTargets.push(Ingredient.of(/^bakery:(.*)(sapling|leaves|seeds)/).itemIds)
   bioTargets.push(Ingredient.of(/^beachparty:(.*)(sapling|leaves|seeds)/).itemIds)
   bioTargets.push(Ingredient.of(/^brewery:(.*)(sapling|leaves|seeds)/).itemIds)
-  bioTargets.push(Ingredient.of(/^createcafe:(.*)(sapling|leaves|seeds)(.*)/).itemIds)
   bioTargets.push(Ingredient.of(/^candlelight:(.*)(sapling|leaves|seeds)/).itemIds)
   bioTargets.push(Ingredient.of(/^deep_aether:(.*)(sapling|leaves|seeds)/).itemIds)
   bioTargets.push(Ingredient.of(/^farmersdelight:(.*)(sapling|leaves|seeds)(.*)/).itemIds)
   bioTargets.push(Ingredient.of(/^meadow:(.*)(sapling|leaves|seeds)/).itemIds)
-  bioTargets.push(Ingredient.of(/^nethervinery:(.*)(sapling|leaves|seeds)/).itemIds)
   bioTargets.push(Ingredient.of(/^quark:(.*)(sapling|leaves|seeds)/).itemIds)
   bioTargets.push(Ingredient.of(/^supplementaries:(.*)(sapling|leaves|seeds)(.*)/).itemIds)
-  bioTargets.push(Ingredient.of(/^thingamajigs:(.*)(sapling|leaves|seeds)/).itemIds)
   bioTargets.push(Ingredient.of(/^tofucraft:(.*)(sapling|leaves|seeds)(.*)/).itemIds)
   bioTargets.push(Ingredient.of(/^thermal:(.*)(sapling|leaves|seeds)(.*)/).itemIds)
   bioTargets.push(Ingredient.of(/^vinery:(.*)(sapling|leaves|seeds)(.*)/).itemIds)
@@ -23,7 +20,6 @@ ServerEvents.recipes((event) => {
   const biofuelTargetModNames = [
     "meadow",
     "vinery",
-    "nethervinery",
     "beachparty",
     "bakery",
     "create",
