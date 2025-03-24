@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
     type: "thermal:press",
     ingredients: [
       {
-        tag: "c:seeds",
+        tag: "forge:seeds",
         count: 1
       },
       /*
