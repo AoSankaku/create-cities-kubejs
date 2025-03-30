@@ -33,6 +33,10 @@ ServerEvents.recipes((event) => {
       output: 4,
     },
     {
+      ingredient: "farmersdelight:straw",
+      output: 3,
+    },
+    {
       ingredient: "farmersdelight:cabbage",
       output: 5,
     },
