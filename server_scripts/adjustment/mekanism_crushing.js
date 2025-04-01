@@ -1,4 +1,5 @@
 ServerEvents.recipes((event) => {
+  // Deprecate rose gold crushing to gold dust recipe
   event.remove({
     type: "mekanism:crushing",
     output: {
