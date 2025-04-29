@@ -1,3 +1,4 @@
+/*
 ServerEvents.recipes((event) => {
   event.custom({
     type: "minecraft:crafting_shaped",
@@ -17,4 +18,4 @@ ServerEvents.recipes((event) => {
     }
   })
 })
-
+*/
