@@ -98,4 +98,42 @@ ServerEvents.recipes((event) => {
       item: "mekanism:dirty_netherite_scrap"
     }
   })
+
+  // Netherite Ingot to Naquada Ingot
+  event.custom({
+    type: "mekanism:nucleosynthesizing",
+    duration: 500,
+    gasInput: {
+      amount: 2,
+      gas: "mekanism:antimatter"
+    },
+    itemInput: {
+      ingredient: {
+        item: "minecraft:netherite_ingot"
+      }
+    },
+    output: {
+      item: "mekanism_extras:ingot_naquadah"
+    }
+  })
+
+  // Lime Wool to Block of Experience
+  event.custom({
+    type: "mekanism:nucleosynthesizing",
+    duration: 500,
+    gasInput: {
+      amount: 2,
+      gas: "mekanism:antimatter"
+    },
+    itemInput: {
+      ingredient: {
+        item: "minecraft:lime_wool"
+      }
+    },
+    output: {
+      item: "create:experience_block"
+    }
+  })
+
+
 })
