@@ -66,7 +66,10 @@ ServerEvents.recipes((event) => {
   // Mixing
 
   soymilks.forEach(fluid => {
-    event.forEachRecipe({ type: "minecraft:crafting_shapeless", output: fluid }, r => {
+    event.forEachRecipe({
+      type: "minecraft:crafting_shapeless",
+      output: fluid !== 'tofucraft:soymilk_fruits_mix' ? fluid : 'tofucraft:soymilk_fruits'
+    }, r => {
       const ingredients = r.originalRecipeIngredients
       const milkIngredients = []
       console.log("===log===")
@@ -126,6 +129,128 @@ ServerEvents.recipes((event) => {
     results: [
       {
         fluid: 'tofucraft:soymilk_honey',
+        amount: 1000
+      }
+    ]
+  })
+
+  // New recipe for soymilk tea
+  event.custom({
+    type: 'create:mixing',
+    ingredients: [
+
+      {
+        item: 'thermal:tea',
+        count: 1,
+      },
+      {
+        fluid: 'tofucraft:soymilk',
+        amount: 1000
+      }
+    ],
+    results: [
+      {
+        fluid: 'tofucraft:soymilk_tea',
+        amount: 1000
+      }
+    ]
+  })
+  event.custom({
+    type: 'create:mixing',
+    ingredients: [
+
+      {
+        item: 'herbalbrews:tea_blossom',
+        count: 1,
+      },
+      {
+        fluid: 'tofucraft:soymilk',
+        amount: 1000
+      }
+    ],
+    results: [
+      {
+        fluid: 'tofucraft:soymilk_tea',
+        amount: 1000
+      }
+    ]
+  })
+  event.custom({
+    type: 'create:mixing',
+    ingredients: [
+
+      {
+        item: 'herbalbrews:tea_leaf',
+        count: 1,
+      },
+      {
+        fluid: 'tofucraft:soymilk',
+        amount: 1000
+      }
+    ],
+    results: [
+      {
+        fluid: 'tofucraft:soymilk_tea',
+        amount: 1000
+      }
+    ]
+  })
+  event.custom({
+    type: 'create:mixing',
+    ingredients: [
+
+      {
+        item: 'herbalbrews:dried_green_tea',
+        count: 1,
+      },
+      {
+        fluid: 'tofucraft:soymilk',
+        amount: 1000
+      }
+    ],
+    results: [
+      {
+        fluid: 'tofucraft:soymilk_tea',
+        amount: 1000
+      }
+    ]
+  })
+  event.custom({
+    type: 'create:mixing',
+    ingredients: [
+
+      {
+        item: 'herbalbrews:dried_black_tea',
+        count: 1,
+      },
+      {
+        fluid: 'tofucraft:soymilk',
+        amount: 1000
+      }
+    ],
+    results: [
+      {
+        fluid: 'tofucraft:soymilk_tea',
+        amount: 1000
+      }
+    ]
+  })
+  event.custom({
+    type: 'create:mixing',
+    ingredients: [
+
+      {
+        item: 'herbalbrews:dried_oolong_tea',
+        count: 1,
+      },
+      {
+        fluid: 'tofucraft:soymilk',
+        amount: 1000
+      }
+    ],
+    results: [
+      {
+        fluid: 'tofucraft:soymilk_tea',
         amount: 1000
       }
     ]
