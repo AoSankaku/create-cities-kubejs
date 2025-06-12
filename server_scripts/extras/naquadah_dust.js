@@ -71,4 +71,22 @@ ServerEvents.recipes((event) => {
     }
   })
 
+  // Dee
+  event.custom({
+    type: "mekanism:nucleosynthesizing",
+    duration: 200,
+    gasInput: {
+      amount: 1,
+      gas: "mekanism:antimatter"
+    },
+    itemInput: {
+      ingredient: {
+        item: "tofucraft:tofuslate"
+      }
+    },
+    output: {
+      item: "ae2:sky_stone_block"
+    }
+  })
+
 })
