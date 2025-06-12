@@ -17,6 +17,23 @@ ServerEvents.recipes((event) => {
     ]
   })
 
+  // Create way to get naquadah dust
+  event.custom({
+    type: "create:crushing",
+    ingredients: [
+      {
+        item: "ae2:sky_dust"
+      }
+    ],
+    processingTime: 350,
+    results: [
+      {
+        chance: 0.01,
+        item: "mekanism_extras:dirty_dust_naquadah"
+      },
+    ]
+  })
+
   // Cobblestone to End Stone
   event.custom({
     type: "mekanism:nucleosynthesizing",
