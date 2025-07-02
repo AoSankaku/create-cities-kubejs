@@ -18,7 +18,30 @@ ServerEvents.recipes((event) => {
         item: "create:cinder_flour"
       },
       {
-        chance: 0.0002,
+        chance: 0.0003,
+        item: "mekanism:dirty_netherite_scrap"
+      },
+    ]
+  })
+
+  event.custom({
+    type: "create:crushing",
+    ingredients: [
+      {
+        item: "minecraft:netherrack"
+      }
+    ],
+    processingTime: 350,
+    results: [
+      {
+        item: "create:cinder_flour"
+      },
+      {
+        chance: 0.2,
+        item: "create:cinder_flour"
+      },
+      {
+        chance: 0.0006,
         item: "mekanism:dirty_netherite_scrap"
       },
     ]
