@@ -37,4 +37,18 @@ ServerEvents.recipes((event) => {
     },
     energy: 256000,
   })
+
+
+  event.custom({
+    type: "mekanism:crushing",
+    input: {
+      ingredient: {
+        item: "minecraft:honey_block"
+      }
+    },
+    output: {
+      item: "minecraft:sugar",
+      count: 20
+    }
+  })
 })
