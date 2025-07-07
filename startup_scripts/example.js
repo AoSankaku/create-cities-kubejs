@@ -15,4 +15,16 @@ ItemEvents.modification(event => {
       food.saturation(0.2)
     }
   })
+  event.modify('moredelight:simple_hamburger', item => {
+    item.foodProperties = food => {
+      food.hunger(8)
+      food.saturation(0.5)
+    }
+  })
+  event.modify('moredelight:hamburger_with_egg', item => {
+    item.foodProperties = food => {
+      food.hunger(9)
+      food.saturation(0.6)
+    }
+  })
 })
