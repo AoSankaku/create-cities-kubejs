@@ -85,7 +85,8 @@ ServerEvents.recipes((event) => {
       }
     },
     output: {
-      item: "ae2:sky_stone_block"
+      item: "ae2:sky_stone_block",
+      count: 64,
     }
   })
 
