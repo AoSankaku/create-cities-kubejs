@@ -1,18 +1,15 @@
+// priority: 10
+
+// This is a server script that sends a message to the player when they log in
+// Set your URL for your server
+// If not set, it will warn you to set it and not send the message
+const urls = {
+  createTrainMap: "http://yourserver.com:8888",
+  mtrMap: "http://yourserver.com:8123",
+}
+
 // Event listener for player joining
 PlayerEvents.loggedIn(event => {
-
-
-
-  // This is a server script that sends a message to the player when they log in
-  // Set your URL for your server
-  // If not set, it will warn you to set it and not send the message
-  const urls = {
-    createTrainMap: "http://yourserver.com:8888",
-    mtrMap: "http://yourserver.com:8123",
-  }
-
-
-
   if (urls.createTrainMap === "http://yourserver.com:8888" || urls.mtrMap === "http://yourserver.com:8123") {
     console.warn("Please set your server URLs in server_scripts/server_message.js");
     return;
