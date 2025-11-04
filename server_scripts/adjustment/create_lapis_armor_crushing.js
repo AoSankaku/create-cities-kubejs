@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
     "mekanismtools:lapis_lazuli_paxel"
   ]
 
-  for (e of lapis_lazuli_crushing_target) {
+  for (const e of lapis_lazuli_crushing_target) {
     event.custom({
       type: "create:crushing",
       ingredients: [
