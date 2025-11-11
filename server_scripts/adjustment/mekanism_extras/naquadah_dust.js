@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
     type: "mekanism:nucleosynthesizing",
     duration: 200,
     gasInput: {
-      amount: 1,
+      amount: 24,
       gas: "mekanism:antimatter"
     },
     itemInput: {
